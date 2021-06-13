@@ -20,6 +20,3 @@ FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
 ENTRYPOINT ["dotnet", "Yahoo.Variacao.Ativo.API.dll"]
-
-RUN chmod +x ./entrypoint.sh
-CMD /bin/bash ./entrypoint.sh

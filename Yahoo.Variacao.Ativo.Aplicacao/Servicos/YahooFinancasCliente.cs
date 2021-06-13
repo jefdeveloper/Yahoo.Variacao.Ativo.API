@@ -32,7 +32,7 @@ namespace Yahoo.Variacao.Ativo.Aplicacao
                 return JsonConvert.DeserializeObject<AtivosReposta>(json);
             }
             else
-                throw new Exception($"Não foi possível obter os ativos de nome '{nomeAtivo}' nos últimos 30 pregões.");
+                return null;
         }
     }
 }

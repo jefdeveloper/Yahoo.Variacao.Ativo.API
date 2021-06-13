@@ -10,16 +10,12 @@ Este é o teste para desenvolvedor back-end fornecendo uma API para consultar a 
 ```
 {
   "Ativos:YahooFinancasApi": "https://query2.finance.yahoo.com/v8/finance/",
-  "Ativos:ConnectionString": "Server=db;Database=master;User=sa;Password=SenhaPadrao;"
+  "Ativos:ConnectionString": "Server=db;Database=master;User=sa;Password=SenhaP@drao123;"
 }
 ```
 
 3. Agora basta definir o `docker-compose` como projeto inicial, clicando com o direito do mouse em cima dele e escolhendo a opção `Set as StartUp Project/Definir como projeto inicial`.
 4. Clicar no botão de `Play` na barra superior do Visual Studio para iniciar a aplicação.
-
-Caso queira iniciar pela linha de comando, rodar o comando via cmd:
-
-`docker-compose up`
 
 ## Utilizando o swagger
 

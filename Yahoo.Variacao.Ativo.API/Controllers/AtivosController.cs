@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using System.Linq;
 using System.Threading.Tasks;
 using Yahoo.Variacao.Ativo.Aplicacao;
 
@@ -11,7 +12,12 @@ namespace Yahoo.Variacao.Ativo.API
         [HttpGet]
         public async Task<IActionResult> Get(string nomeAtivo, [FromServices] IObterVariacoesAtivosUltimoMesUseCase useCase)
         {
-            return Ok(await useCase.Executar(nomeAtivo));
+           var lstAtivos = await useCase.Executar(nomeAtivo);
+
+            if (lstAtivos == null || !lstAtivos.Any())
+                return NotFound(nomeAtivo);
+
+            return Ok(lstAtivos);
         }
     }
 }
