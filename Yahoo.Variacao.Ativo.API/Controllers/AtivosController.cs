@@ -5,17 +5,20 @@ using Yahoo.Variacao.Ativo.Aplicacao;
 
 namespace Yahoo.Variacao.Ativo.API
 {
-    [Route("api/[controller]")]
+    [Route("api/ativos")]
     [ApiController]
     public class AtivosController : ControllerBase
     {
         [HttpGet]
         public async Task<IActionResult> Get(string nomeAtivo, [FromServices] IObterVariacoesAtivosUltimoMesUseCase useCase)
         {
-           var lstAtivos = await useCase.Executar(nomeAtivo);
+            if (string.IsNullOrEmpty(nomeAtivo))
+                return BadRequest();
+
+            var lstAtivos = await useCase.Executar(nomeAtivo);
 
             if (lstAtivos == null || !lstAtivos.Any())
-                return NotFound(nomeAtivo);
+                return NoContent();
 
             return Ok(lstAtivos);
         }
