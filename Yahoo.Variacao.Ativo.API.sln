@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31402.337
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yahoo.Variacao.Ativo.API", "Yahoo.Variacao.Ativo.API\Yahoo.Variacao.Ativo.API.csproj", "{AA5130AA-C634-4921-8795-DDD4381B86DA}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{5E90BF47-6852-4F74-9A22-5D6A987010F9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yahoo.Variacao.Ativo.Infra", "Yahoo.Variacao.Ativo.Infra\Yahoo.Variacao.Ativo.Infra.csproj", "{DA9B030F-EC3F-4436-A0B6-3A3C58B57A1B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yahoo.Variacao.Ativo.Dominio", "Yahoo.Variacao.Ativo.Dominio\Yahoo.Variacao.Ativo.Dominio.csproj", "{1A0C2DC8-E793-4D20-A54D-789B600E8A65}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yahoo.Variacao.Ativo.Aplicacao", "Yahoo.Variacao.Ativo.Aplicacao\Yahoo.Variacao.Ativo.Aplicacao.csproj", "{13AB3AD7-4A46-42C5-BE36-1DA3001113F2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AA5130AA-C634-4921-8795-DDD4381B86DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA5130AA-C634-4921-8795-DDD4381B86DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA5130AA-C634-4921-8795-DDD4381B86DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA5130AA-C634-4921-8795-DDD4381B86DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E90BF47-6852-4F74-9A22-5D6A987010F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E90BF47-6852-4F74-9A22-5D6A987010F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E90BF47-6852-4F74-9A22-5D6A987010F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E90BF47-6852-4F74-9A22-5D6A987010F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA9B030F-EC3F-4436-A0B6-3A3C58B57A1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA9B030F-EC3F-4436-A0B6-3A3C58B57A1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA9B030F-EC3F-4436-A0B6-3A3C58B57A1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA9B030F-EC3F-4436-A0B6-3A3C58B57A1B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A0C2DC8-E793-4D20-A54D-789B600E8A65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A0C2DC8-E793-4D20-A54D-789B600E8A65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A0C2DC8-E793-4D20-A54D-789B600E8A65}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A0C2DC8-E793-4D20-A54D-789B600E8A65}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13AB3AD7-4A46-42C5-BE36-1DA3001113F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13AB3AD7-4A46-42C5-BE36-1DA3001113F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13AB3AD7-4A46-42C5-BE36-1DA3001113F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13AB3AD7-4A46-42C5-BE36-1DA3001113F2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9B1DA888-A0C6-410A-B13B-B79DC107DAD2}
+	EndGlobalSection
+EndGlobal
